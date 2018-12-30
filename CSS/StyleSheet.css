@@ -1,0 +1,39 @@
+p {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+#logo {
+	width: 20%
+}
+
+.button {
+	width: 20%;
+    background-color: lightblue;
+}
+
+.header {
+	float: none;
+	padding-bottom: 2.5em;
+	border-bottom: .4em solid red;
+}
+
+.footer {
+	color: #e5e5e5;
+	padding-top: 2em;
+	padding-bottom: 5em;
+	background-color: #7f7f7f;
+	border-top: 0.4em solid red;
+}
+
+.topnav a {
+
+}
+.utility {
+	text-align: center;
+	letter-spacing: 3px;
+	text-decoration: none;
+	color: #fff;
+}
+.utility:visited {text-decoration: none;	color: white;}
+.utility:hover {text-decoration: none;	color: black;}
