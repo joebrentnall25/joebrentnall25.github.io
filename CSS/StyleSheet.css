@@ -3,6 +3,11 @@ p {
   letter-spacing: 3px;
 }
 
+h2 {
+	text-align: center;
+	letter-spacing: 3px;
+}
+
 #logo {
 	width: 20%
 }
@@ -16,10 +21,26 @@ p {
 	float: none;
 	padding-bottom: 2.5em;
 	border-bottom: .4em solid red;
+	margin-bottom: 1em;
 }
 
 .topnav {
+	background-color: white;
+	overflow: hidden; l
+}
+.topnav a {
 	float: left;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.topnav a:visited {text-decoration: none; color: black;}
+.topnav a:hover {text-decoration: none; color: grey;}
+
+.topnav a.active {
+	color: red;
 }
 
 .footer {
@@ -30,9 +51,6 @@ p {
 	border-top: 0.4em solid red;
 }
 
-.topnav a {
-
-}
 .utility {
 	text-align: center;
 	letter-spacing: 3px;
@@ -41,3 +59,20 @@ p {
 }
 .utility:visited {text-decoration: none;	color: white;}
 .utility:hover {text-decoration: none;	color: black;}
+
+.column {
+	float: left;
+	width: 33.3%;
+	padding: 2em;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+}
