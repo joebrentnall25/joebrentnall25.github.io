@@ -1,17 +1,102 @@
 <!DOCTYPE html>
-
+<!DOCTYPE html>
+<html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Find Us</title>
 	<link rel="StyleSheet" href="CSS/StyleSheet.css">
 </head>
-
 <body>
-	<footer class="footer">
-		<p><b> Utility Links</b></p>
-		<div class="utility">
-			<a href="Contact.html" class="utility">Contact Us</a><br>
-			<a href="Form.html" class="utility">Have a Question?</a><br>		
-			<a href="AboutUs.html" class="utility">About Us</a><br>		
-			<a href="FindUs.html" class="utility">Find Us</a>			
-		</div>		
-	</footer>
+	<div class="tab">
+  		<button class="tablinks" onclick="storePage(event, 'LondonStore')" id="defaultOpen">London Store (A)</button>
+ 		<button class="tablinks" onclick="storePage(event, 'ParisStore')">Paris Store (B)</button>
+ 		<button class="tablinks" onclick="storePage(event, 'NYStore')">New York Store (C)</button>
+ 		<button class="tablinks" onclick="storePage(event, 'LAStore')">Los Angeles Store (D)</button>
+	</div>
+
+	<div id="LondonStore" class="tabcontent">
+  		<h3>Supreme London</h3>
+  		<p>2/3 Peter Street<br>London W1F OAA<br><br>
+  			Tel: +44 207-437-0493<br><br>
+  			Open 11 - 7 (MON-SAT)<br>
+  			12 - 6 (SUN)</p>
+  	</div>
+	<div id="ParisStore" class="tabcontent">
+  		<h3>Supreme Paris</h3>
+  		<p>20 Rue Barbette<br>Paris 75003<br><br>
+  			Tel: +33 1 43 48 80 14<br><br>
+  			Open 11 - 7 (MON-SAT)<br>12 - 6 (SUN)</p> 
+	</div>
+	<div id="NYStore" class="tabcontent">
+  		<h3>Supreme New York</h3>
+  		<p>274 Lafayette Street<br>NYC 10012<br><br>
+  			Tel: 212-966-7799<br><br>
+  			Open 11 - 7 (MON-SAT)<br>
+  			12 - 6 (SUN)</p>
+	</div>
+	<div id="LAStore" class="tabcontent">
+  		<h3>Supreme Los Angeles</h3>
+  		<p>439 North Fairfax Ave<br>LA 90036<br><br>
+  			Tel: 323-655-6205<br><br>
+  			Open 11 - 6 (MON-SAT)<br>
+  			12 - 6 (SUN)</p>
+	</div>
+
+	<h1 class="center" style="padding-top: 50px">Store Locations</h1>
+	<div id='map' style="padding-top: 50px"></div>
+	<body onload="getLocation()">
+	<script>
+		var myLng;
+		var myLat;
+
+		function getLocation() {
+  			if (navigator.geolocation) {
+   					navigator.geolocation.getCurrentPosition(showPosition);
+  			} else { 
+    			x.innerHTML = "Geolocation is not supported by this browser.";
+  			}
+		}
+
+		function showPosition(position) {
+  			myLat = position.coords.latitude;
+  			myLng = position.coords.longitude;
+  			initMap();
+		}
+
+		function initMap() {
+			var myLocation = {lat: myLat, lng: myLng};
+			var store1 = {lat:51.512961,lng:-0.133967};
+			var store2 = {lat:48.859301,lng:2.360011};
+			var store3 = {lat:40.724097,lng:-73.996330};
+			var store4 = {lat:34.079338,lng:-118.361724};
+
+			var map = new google.maps.Map(
+      			document.getElementById('map'), {zoom: 3, center: myLocation});
+			
+			var Marker1 = new google.maps.Marker({position: store1, map: map, animation: google.maps.Animation.DROP, label: 'A'});
+			var Marker2 = new google.maps.Marker({position: store2, map: map, animation: google.maps.Animation.DROP, label: 'B'});
+			var Marker3 = new google.maps.Marker({position: store3, map: map, animation: google.maps.Animation.DROP, label: 'C'});
+			var Marker4 = new google.maps.Marker({position: store4, map: map, animation: google.maps.Animation.DROP, label: 'D'});
+			var myMarker = new google.maps.Marker({position:myLocation, map: map, animation: google.maps.Animation.BOUNCE});
+		}
+
+		function storePage(evt, StoreName) {
+  			var i, tabcontent, tablinks;
+  			tabcontent = document.getElementsByClassName("tabcontent");
+  			for (i = 0; i < tabcontent.length; i++) {
+    			tabcontent[i].style.display = "none";
+  			}
+  			tablinks = document.getElementsByClassName("tablinks");
+ 			for (i = 0; i < tablinks.length; i++) {
+    		tablinks[i].className = tablinks[i].className.replace(" active", "");
+  		}
+  		document.getElementById(StoreName).style.display = "block";
+  		evt.currentTarget.className += " active";
+}
+	document.getElementById("defaultOpen").click();
+
+	</script>
+	<script	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaLWF03PFyPm8DZWHq5QmZXsdJLxV6hwM&callback=initMap"></script>
 </body>
+</html>
+

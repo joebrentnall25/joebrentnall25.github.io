@@ -6,17 +6,9 @@
 	<link rel="StyleSheet" href="CSS/StyleSheet.css">
 </head>
 <body>
-	<header class="header">
-		<nav class="navigation">
-			<img src="Assets/logo.png" id="logo"></a>
-			<div style="text-align: center;">
-			<button class="button"><a href="index.html" class="active" style="color: white">Home</a></button>
-			<button class="button"><a href="NewItems.html" style="color: white">New Items</a></button>
-			<button class="button"><a href="FindUs.html" style="color: white">Find Us</a></button>
-			<button class="button"><a href="AboutUs.html" style="color: white">About Us</a></button>				
-			</div>			
-		</nav>
-	</header>	
+	<header>
+		
+	</header>
 	<!--Introduction-->
 	<section>
 		<h1 style="letter-spacing: 0.05em; font-size: 40px; text-align: center;" >New Items!</h1>
@@ -24,11 +16,13 @@
 			is just showing them off so you can see them easily. If you like any of these items,
 			click them and you will be taken to the supreme store page!</p>
 			<div class="buttons" id="myButtons">
-				<p></p>
-				<button class="btn" onclick="two()">2</button>
-				<button class="btn" onclick="three()">3</button>
-				<button class="btn" onclick="four()">4</button>
-				<button class="btn" onclick="five()">5</button>
+				<div class="btnBox">
+					<button class="btn" onclick="two()">2</button>
+					<button class="btn" onclick="three()">3</button>
+					<button class="btn" onclick="four()">4</button>
+					<button class="btn" onclick="five()">5</button>
+					<button class="btn" onclick="six()">6</button>
+				</div>
 			</div>
 	</section>
 	<!--Image Grid for all new items-->
@@ -36,41 +30,43 @@
 	<section>
 		<div class="row"> 
   			<div class="column">
-    			<a href="https://www.supremenewyork.com/shop/pants/lyez10rah"><img src="Assets/1.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/hats/o7l3qe0ns"><img src="Assets/2.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/hats/usr9uodc8"><img src="Assets/3.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/jackets/d5vdqbxi1"><img src="Assets/4.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/jackets/zzlaqusmv"><img src="Assets/5.jpg" style="width: 100%"></a>    			 			
+    			<a href="https://www.supremenewyork.com/shop/pants/lyez10rah"><img src="Assets/1.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/hats/o7l3qe0ns"><img src="Assets/2.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/hats/usr9uodc8"><img src="Assets/3.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/jackets/d5vdqbxi1"><img src="Assets/4.jpg" class="galImg"></a>   			 			
   			</div>
   			<div class="column">
-    			<a href="https://www.supremenewyork.com/shop/shirts/lnqokpm0f"><img src="Assets/8.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/shirts/p0ain5pyc"><img src="Assets/9.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/sweatshirts/f5rsft8a7"><img src="Assets/10.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/sweatshirts/h6xhk924g"><img src="Assets/11.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/sweatshirts/yw4mifo2y"><img src="Assets/12.jpg" style="width: 100%"></a>   			 	
+    			<a href="https://www.supremenewyork.com/shop/shirts/lnqokpm0f"><img src="Assets/8.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/shirts/p0ain5pyc"><img src="Assets/9.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/sweatshirts/f5rsft8a7"><img src="Assets/10.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/sweatshirts/h6xhk924g"><img src="Assets/11.jpg" class="galImg"></a> 			 	
  			</div> 
   			<div class="column">
-    			<a href="https://www.supremenewyork.com/shop/tops-sweaters/k5ldwkihg"><img src="Assets/14.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/tops-sweaters/g654afr8l"><img src="Assets/15.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/pants/yp7smrktj"><img src="Assets/16.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/pants/cf5cbldmr"><img src="Assets/17.jpg" style="width: 100%"></a>
-   				<a href="https://www.supremenewyork.com/shop/pants/zq4gkr6md"><img src="Assets/18.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/pants/ofa2yzu5g"><img src="Assets/19.jpg" style="width: 100%"></a>
+    			<a href="https://www.supremenewyork.com/shop/tops-sweaters/k5ldwkihg"><img src="Assets/14.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/tops-sweaters/g654afr8l"><img src="Assets/15.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/pants/yp7smrktj"><img src="Assets/16.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/pants/cf5cbldmr"><img src="Assets/17.jpg" class="galImg"></a>
+   				<a href="https://www.supremenewyork.com/shop/pants/zq4gkr6md"><img src="Assets/18.jpg" class="galImg"></a>
     			
   			</div>
   			<div class="column">
-    			<a href="https://www.supremenewyork.com/shop/hats/rp30vytka"><img src="Assets/21.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/shoes/l0fcgk2ts"><img src="Assets/22.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/accessories/jm7gh5wyd"><img src="Assets/23.jpg" style="width: 100%"></a>
-    			<a href="https://www.supremenewyork.com/shop/accessories/dfrkdi0aw"><img src="Assets/24.jpg" style="width: 100%"></a>
-   				<a href="https://www.supremenewyork.com/shop/accessories/wzo9xvudw"><img src="Assets/25.jpg" style="width: 100%"></a>    			
+    			<a href="https://www.supremenewyork.com/shop/hats/rp30vytka"><img src="Assets/21.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/shoes/l0fcgk2ts"><img src="Assets/22.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/accessories/jm7gh5wyd"><img src="Assets/23.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/accessories/dfrkdi0aw"><img src="Assets/24.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/jackets/jc4nm6ygo"><img src="Assets/6.jpg" class="galImg"></a>			
   			</div>
   			<div class="column">
-  				<a href="https://www.supremenewyork.com/shop/jackets/e48qbfopx"><img src="Assets/7.jpg" style="width: 100%"></a>
-  				<a href="https://www.supremenewyork.com/shop/sweatshirts/ur9iekp5v"><img src="Assets/13.jpg" style="width: 100%"></a>
-  				<a href="https://www.supremenewyork.com/shop/hats/agu7q32zf"><img src="Assets/20.jpg" style="width: 100%"></a>
-  				<a href="https://www.supremenewyork.com/shop/accessories/odziag6wu"><img src="Assets/26.jpg" style="width: 100%"></a>
-  				<a href="https://www.supremenewyork.com/shop/jackets/jc4nm6ygo"><img src="Assets/6.jpg" style="width: 100%"></a>   
+  				<a href="https://www.supremenewyork.com/shop/jackets/e48qbfopx"><img src="Assets/7.jpg" class="galImg"></a>
+  				<a href="https://www.supremenewyork.com/shop/sweatshirts/ur9iekp5v"><img src="Assets/13.jpg" class="galImg"></a>
+  				<a href="https://www.supremenewyork.com/shop/hats/agu7q32zf"><img src="Assets/20.jpg" class="galImg"></a>
+  				<a href="https://www.supremenewyork.com/shop/accessories/odziag6wu"><img src="Assets/26.jpg" class="galImg"></a>
+  			</div>
+  			<div class="column">
+  				<a href="https://www.supremenewyork.com/shop/jackets/zzlaqusmv"><img src="Assets/5.jpg" class="galImg"></a>
+    			<a href="https://www.supremenewyork.com/shop/sweatshirts/yw4mifo2y"><img src="Assets/12.jpg" class="galImg"></a> 
+    			<a href="https://www.supremenewyork.com/shop/pants/ofa2yzu5g"><img src="Assets/19.jpg" class="galImg"></a> 
+   				<a href="https://www.supremenewyork.com/shop/accessories/wzo9xvudw"><img src="Assets/25.jpg" class="galImg"></a>       
   			</div>
 		</div>
 		<script>
@@ -107,8 +103,16 @@
 			// Five pictures side by side
 			function five(){
     			for (i = 0; i < elements.length; i++) {
-    				elements[i].style.msFlex = "20";  // IE10
-    				elements[i].style.flex = "20";
+    				elements[i].style.msFlex = "20%";  // IE10
+    				elements[i].style.flex = "20%";
+  				}
+			}
+
+			// Six pictures side by side
+			function six(){
+    			for (i = 0; i < elements.length; i++) {
+    				elements[i].style.msFlex = "16.6%";  // IE10
+    				elements[i].style.flex = "16.6%";
   				}
 			}
 
@@ -122,7 +126,27 @@
     				this.className += " active";
   				});
 			}
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+					document.getElementById('topBtn').style.display = "block";
+				} else {
+					document.getElementById('topBtn').style.display = "none";
+				}
+			}
+
+			function BackToTop() {
+				document.body.scrollTop = 0; // Safari
+				document.documentElement.scrollTop = 0; //Chrome, Firefox, IE and Opera
+			}
 			</script>
+
+			<button onclick="BackToTop()" id=topBtn title="Back to Top">Top</button>			
 	</section>
+	<footer>
+		
+	</footer>
 </body>
 </html>
