@@ -48,6 +48,7 @@ a:hover, a:active { text-decoration: none; color: black;}
 	padding-bottom: 1em;
 	border-bottom: .5em solid #D02120;
 	box-shadow: 5px 5px 5px grey;
+	margin-bottom: 25px;
 }
 
 .button {

@@ -6,8 +6,16 @@
 	<link rel="StyleSheet" href="CSS/StyleSheet.css">
 </head>
 <body>
-	<header>
-		
+	<header class="header">
+			<nav class="navigation">
+				<a href="index.html"><img src="Assets/logo.png" id="logo" ></a>
+				<div style="text-align: center;">
+					<button class="button"><a href="index.html" class="active" style="color: white">Home</a></button>
+					<button class="button"><a href="NewItems.html" style="color: white">New Items</a></button>
+					<button class="button"><a href="FindUs.html" style="color: white">Find Us</a></button>
+					<button class="button"><a href="Demo.html" style="color: white">DEMO</a></button>				
+				</div>			
+			</nav>
 	</header>
 	<!--Introduction-->
 	<section>
@@ -145,8 +153,12 @@
 
 			<button onclick="BackToTop()" id=topBtn title="Back to Top">Top</button>			
 	</section>
-	<footer>
-		
+	<footer class="footer">
+		<p><b> Utility Links</b></p>
+		<div class="utility">
+			<a href="FindUs.html" class="utility">Find Us</a><br>
+			<a href="Demo.html" class="utility">Demo</a><br>				
+		</div>		
 	</footer>
 </body>
 </html>
